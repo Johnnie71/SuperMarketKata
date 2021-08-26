@@ -17,8 +17,8 @@ module.exports = class Checkout{
         return this.total;
     }
 
-    addDiscount(item, itemCount, discount){
-
+    addDiscount(item, itemCount, discountPrice){
+        this.discounts[item] = {count: itemCount, price: discountPrice}
     }
 
 }

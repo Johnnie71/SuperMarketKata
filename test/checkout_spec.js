@@ -5,7 +5,11 @@ let checkout;
 
 beforeEach(function(){
     checkout = new Checkout();
-})
+});
+
+it('Can initiate a checkout class', function(){
+
+});
 
 it('Can add item price', function(){
     checkout.addItemPrice('a', 1);

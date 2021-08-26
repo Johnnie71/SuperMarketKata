@@ -1,6 +1,7 @@
 module.exports = class Checkout{
     constructor(){
         this.prices = new Object();
+        this.discounts = new Object();
         this.total = 0;
     }
 

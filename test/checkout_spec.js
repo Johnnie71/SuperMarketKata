@@ -23,13 +23,13 @@ it('Can add item: addItemToCart', function(){
 
 it('Calculates current total: currentTotal', function(){
     checkout.addItemToCart('a');
-    expect(checkout.currentTotal()).to.equal(1);
+    expect(checkout.calculateTotal()).to.equal(1);
 });
 
 it('Can add multiple items and get correct total', function(){
     checkout.addItemToCart('a');
     checkout.addItemToCart('b');
-    expect(checkout.currentTotal()).to.equal(3);
+    expect(checkout.calculateTotal()).to.equal(3);
 });
 
 it('Can add discount rules: addDiscount', function(){
@@ -41,6 +41,6 @@ it('Can apply discount rules to the total', function(){
     checkout.addItemToCart('a');
     checkout.addItemToCart('a');
     checkout.addItemToCart('a');
-    expect(checkout.currentTotal()).to.equal(2);
+    expect(checkout.calculateTotal()).to.equal(2);
     
 })

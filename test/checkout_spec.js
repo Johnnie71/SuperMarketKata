@@ -3,9 +3,9 @@ const expect = require('chai').expect;
 
 let checkout;
 
-beforeEach(){
+beforeEach(function(){
     checkout = new Checkout();
-}
+})
 
 it('Can add item price', function(){
     checkout.addItemPrice('a', 1);

@@ -20,7 +20,16 @@ module.exports = class Checkout{
     calculateTotal(){
         let total = 0;
         for(const item in this.items){
-            total += (this.prices[item] * this.items[item]);
+            let discount = this.discounts[item];
+            if(discount != undefined){
+                let numOfDiscounts = this.items[item] / discount.count;
+                total += numOfDiscounts * discount.price;
+
+                let remainder = this.items[item] % discount.count;
+                total += remainder * this.prices[item];
+            } else {
+                total += (this.prices[item] * this.items[item]);
+            }
         };
         return total;
     }

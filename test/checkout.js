@@ -10,11 +10,19 @@ module.exports = class Checkout{
     }
 
     addItemToCart(item){
-        this.total += this.prices[item];
+        if(this.items[item] == undefined){
+            this.items[item] = 1;
+        } else {
+            this.items[item]++;
+        };
     }
 
     currentTotal(){
-        return this.total;
+        let total = 0;
+        for(const item in this.items){
+            total += (this.prices[item] * this.items[item]);
+        };
+        return total;
     }
 
     addDiscount(item, itemCount, discountPrice){

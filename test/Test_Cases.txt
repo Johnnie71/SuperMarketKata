@@ -1,0 +1,1 @@
+- Can create an instance of the checkout class

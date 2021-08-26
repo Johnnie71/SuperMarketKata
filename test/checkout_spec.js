@@ -23,4 +23,12 @@ it('Calculates current total', function(){
     checkout.addItem('a');
     checkout.addItemPrice('a', 1);
     expect(checkout.currentTotal()).to.equal(1);
+});
+
+it('Can add multiple items and get correct total', function(){
+    checkout.addItemPrice('a', 1);
+    checkout.addItemPrice('b', 2);
+    checkout.addItem('a');
+    checkout.addItem('b');
+    expect(checkout.currentTotal()).to.equal(3);
 })

@@ -7,5 +7,5 @@ it('Can initiate checkout class', function(){
 
 it('Can add item price', function(){
     let checkout = new Checkout();
-    checkout.addItemPrice();
+    checkout.addItemPrice('a', 1);
 })

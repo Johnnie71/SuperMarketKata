@@ -36,7 +36,7 @@ it('Can add discount rules: addDiscount', function(){
     checkout.addDiscount('a', 3, 2);
 });
 
-xit('Can apply discount rules to the total', function(){
+it('Can apply discount rules to the total', function(){
     checkout.addDiscount('a', 3, 2);
     checkout.addItemToCart('a');
     checkout.addItemToCart('a');

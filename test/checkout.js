@@ -17,7 +17,7 @@ module.exports = class Checkout{
         };
     }
 
-    currentTotal(){
+    calculateTotal(){
         let total = 0;
         for(const item in this.items){
             total += (this.prices[item] * this.items[item]);

@@ -31,4 +31,8 @@ it('Can add multiple items and get correct total', function(){
     checkout.addItemToCart('a');
     checkout.addItemToCart('b');
     expect(checkout.currentTotal()).to.equal(3);
-})
+});
+
+it('Can add discount rules: addDiscount', function(){
+    checkout.addDiscount('a', 3, 2);
+});

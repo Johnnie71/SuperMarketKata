@@ -20,5 +20,7 @@ it('Can add item', function(){
 });
 
 it('Calculates current total', function(){
-    checkout.currentTotal();
+    checkout.addItem('a');
+    checkout.addItemPrice('a', 1);
+    expect(checkout.currentTotal()).to.equal(1);
 })

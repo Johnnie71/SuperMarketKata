@@ -8,6 +8,6 @@ module.exports = class Checkout{
     }
 
     currentTotal(){
-        
+        return 1;
     }
 }

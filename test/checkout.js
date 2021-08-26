@@ -3,5 +3,7 @@ module.exports = class Checkout{
 
     }
 
-    addItem(item)
+    addItem(item){
+        
+    }
 }

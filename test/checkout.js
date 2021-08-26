@@ -6,4 +6,8 @@ module.exports = class Checkout{
     addItem(item){
         
     }
+
+    currentTotal(){
+        
+    }
 }

@@ -18,3 +18,7 @@ it('Can add item price', function(){
 it('Can add item', function(){
     checkout.addItem();
 });
+
+it('Calculates current total', function(){
+    checkout.currentTotal();
+})

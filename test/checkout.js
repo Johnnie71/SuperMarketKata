@@ -26,6 +26,7 @@ module.exports = class Checkout{
     }
 
     calculateItemTotal(item){
+        let total = 0;
         let discount = this.discounts[item];
             if(discount != undefined){
                 let numOfDiscounts = this.items[item] / discount.count;

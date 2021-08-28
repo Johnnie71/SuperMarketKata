@@ -37,6 +37,7 @@ module.exports = class Checkout{
             } else {
                 total += (this.prices[item] * this.items[item]);
             }
+            return total;
     }
 
     addDiscount(item, itemCount, discountPrice){

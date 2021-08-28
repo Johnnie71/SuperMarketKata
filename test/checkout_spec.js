@@ -42,5 +42,4 @@ it('Can apply discount rules to the total', function(){
     checkout.addItemToCart('a');
     checkout.addItemToCart('a');
     expect(checkout.calculateTotal()).to.equal(2);
-    
-})
+});

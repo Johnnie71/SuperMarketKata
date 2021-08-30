@@ -10,7 +10,7 @@ module.exports = class Checkout{
     }
 
     addItemToCart(item){
-        if ( this.prices[item] == undefined ){
+        if(this.prices[item] == undefined){
            throw(`No price defined for this item!`);
         }
         if(this.items[item] == undefined){

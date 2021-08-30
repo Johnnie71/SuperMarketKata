@@ -18,7 +18,7 @@ it('Can add item price: addItemPrice', function(){
 });
 
 it('Can add item: addItemToCart', function(){
-    checkout.addItemToCart();
+    checkout.addItemToCart('a');
 });
 
 it('Calculates current total: currentTotal', function(){

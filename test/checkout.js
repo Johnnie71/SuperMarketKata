@@ -13,12 +13,12 @@ module.exports = class Checkout{
         if (this.prices[item] == undefined){
             console.log("here")
             throw(`No price defined for this album: ${item}`);
-        };
+        }
         if(this.items[item] == undefined){
             this.items[item] = 1;
         } else {
             this.items[item]++;
-        };
+        }
     }
 
     calculateTotal(){

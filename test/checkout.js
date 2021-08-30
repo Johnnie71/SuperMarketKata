@@ -11,7 +11,8 @@ module.exports = class Checkout{
 
     addItemToCart(item){
         if (this.prices[item] == undefined){
-            throw("No price definded for this item " + item);
+            console.log("here")
+            throw(`No price defined for this album: ${item}`);
         };
         if(this.items[item] == undefined){
             this.items[item] = 1;
